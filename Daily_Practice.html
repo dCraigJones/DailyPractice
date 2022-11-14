@@ -1,29 +1,13 @@
 <!doctype html public "-//w3c//dtd html 3.2//en">
 <html>
 <head>
-    <title>Juliette Homepage</title>
-    <script type="text/javascript">
-
-        function my_fun(j){
-            var chkbox ="ckb" + j;
-            var my_span ="my_span" + j;
-
-            var msg = chkbox + "  " + my_span;
-
-            if(document.getElementById(chkbox).checked){ 
-                document.getElementById(my_span).style.textDecoration='line-through';
-            }else{
-                document.getElementById(my_span).style.textDecoration='none';
-            }
-        }
-    </script>
-
+    <title>Daily Practice</title>
 </head>
 
 <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans; margin: 0;}
     body {background-color: rgb(176, 206, 230);}
-    th, td { padding: 15px;}
+    th, td { padding: 0px;}
 </style>
 
 <body>
@@ -33,79 +17,157 @@
 
 <br>
 <H2>Openings</H2>
+<H4>Traps</H4>
 <table>
-    <tr><td>
-    <input type=checkbox  id=ckb14 value=1 onclick=my_fun(14);><span id='my_span14'>
-        <a href="https://listudy.org/en/studies/k3pnkc-scholars-mate" target="_blank">Scholar's Mate</a></span><br>
-    </td><td>
-    <input type=checkbox  id=ckb15 value=1 onclick=my_fun(15);><span id='my_span15'>
-        <a href="https://listudy.org/en/studies/4gr5df-london-system-repertoire" target="_blank">London System</a></span><br>
-    </td></tr>
+    <tr>
+        <td>            
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://listudy.org/en/studies/k3pnkc-scholars-mate" target="_blank">Scholar's Mate</a>
+            </label>
+        </td>
+    </tr>
 </table>
+<H4>White</H4>
+<table>
+    <tr>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://listudy.org/en/studies/4gr5df-london-system-repertoire" target="_blank">London System</a>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://listudy.org/en/studies/7ouhva-the-italian-game" target="_blank">Italian Game</a>
+            </label>
+        </td>
+    </tr>
+</table>
+<H4>Black</H4>
+<table>
+    <tr>
+        <td>            
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://listudy.org/en/studies/n9ronj-rozman-french-defense-by-gotham-chess" target="_blank">French Defense</a>
+            </label>
+        </td>
+        <td>            
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://listudy.org/en/studies/stuo5l-london-system-black" target="_blank">London Defense</a>
+            </label>
+        </td>
+    </tr>
+</table>
+
 
 <!-- TODO:
         Separate fork, pin, and skewer.  Once all three are checked... next links are available.
 -->
 <br>
 <H2>Tactics</H2>
+<H4>Basic</H4>
 <table>
-    <tr><td>
-        <form name=form1 method=post action=check.php>
-            <input type=checkbox  id=ckb1 value=1 onclick=my_fun(1);><span id='my_span1'>
-                <a href="https://lichess.org/training/fork" target="_blank">Fork</a></span><br>
-    
-            <input type=checkbox  id=ckb2 value=1 onclick=my_fun(2);><span id='my_span2'>
-                <a href="https://lichess.org/training/pin" target="_blank">Pin</a></span><br>
-    
-            <input type=checkbox  id=ckb3 value=1 onclick=my_fun(3);><span id='my_span3'>
-                <a href="https://lichess.org/training/skewer" target="_blank">Skewer</a></span><br>
-        </form>
-
-    </td><td>
-        <form name=form1 method=post action=check.php>
-            <input type=checkbox  id=ckb4 value=1 onclick=my_fun(4);><span id='my_span4'>
-                <a href="https://lichess.org/training/doubleCheck" target="_blank">Double Check</a></span><br>
-    
-            <input type=checkbox  id=ckb5 value=1 onclick=my_fun(5);><span id='my_span5'>
-                <a href="https://lichess.org/training/trappedPiece" target="_blank">Trapped Piece</a></span><br>
-    
-            <input type=checkbox  id=ckb6 value=1 onclick=my_fun(6);><span id='my_span6'>
-                <a href="https://lichess.org/training/hangingPiece" target="_blank">Hanging Piece</a></span><br>
-        </form>    
-        
-    </td><td>
-        <form name=form1 method=post action=check.php>
-            <input type=checkbox  id=ckb7 value=1 onclick=my_fun(7);><span id='my_span7'>
-                <a href="https://lichess.org/training/sacrifice" target="_blank">Sacrifice</a></span><br>
-    
-            <input type=checkbox  id=ckb8 value=1 onclick=my_fun(8);><span id='my_span8'>
-                <a href="https://lichess.org/training/discoveredAttack" target="_blank">Discovered Attack</a></span><br>
-    
-            <input type=checkbox  id=ckb9 value=1 onclick=my_fun(9);><span id='my_span9'>
-                <a href="https://lichess.org/training/capturingDefender" target="_blank">Capture the Defender</a></span><br>
-        </form>
-
-    </td></tr>
+    <tr>
+        <td>            
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://lichess.org/training/fork" target="_blank">Fork</a>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://lichess.org/training/pin" target="_blank">Pin</a>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Skewer">
+                <a href="https://lichess.org/training/skewer" target="_blank">Skewer</a>
+            </label>
+        </td>
+    </tr>
+</table>
+<H4>Intermediate</H4>
+<table>
+    <tr>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="DoubleCheck">
+                <a href="https://lichess.org/training/doubleCheck" target="_blank">Double Check</a>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="TrappedPiece">
+                <a href="https://lichess.org/training/trappedPiece" target="_blank">Trapped Piece</a>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="HangingPiece">
+                <a href="https://lichess.org/training/hangingPiece" target="_blank">Hanging Piece</a>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Sacrifice">
+                <a href="https://lichess.org/training/sacrifice" target="_blank">Sacrifice</a>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="DiscoveredAttack">
+                <a href="https://lichess.org/training/discoveredAttack" target="_blank">Discovered Attack</a>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="CaptureTheDefender">
+                <a href="https://lichess.org/training/capturingDefender" target="_blank">Capture the Defender</a>
+            </label>
+        </td>
+    </tr>
 </table>
 
 <br>
 <H2>Endgame</H2>
-    <table>
-        <tr><td>
-        <input type=checkbox  id=ckb16 value=1 onclick=my_fun(16);><span id='my_span16'>
-            <a href="https://lichess.org/practice/checkmates/piece-checkmates-i/BJy6fEDf/dW7KIuoY" target="_blank">Basic Piece Mates</a></span><br>
-        </td><td>
-        <input type=checkbox  id=ckb17 value=1 onclick=my_fun(17);><span id='my_span17'>
-            <a href="https://lichess.org/practice/checkmates/checkmate-patterns-i/fE4k21MW/9rd7XwOw" target="_blank">Basic Mate Patterns</a></span><br>
-        </td></tr>
-        <tr><td>
-        <input type=checkbox  id=ckb10 value=1 onclick=my_fun(10);><span id='my_span10'>
-            <a href="https://lichess.org/training/mateIn1" target="_blank">Mate in 1</a></span><br>
-        </td><td>
-        <input type=checkbox  id=ckb11 value=1 onclick=my_fun(11);><span id='my_span11'>
-            <a href="https://lichess.org/training/mateIn2" target="_blank">Mate in 2</a></span><br>
-    </td></tr>
-    </table>
+<table>
+    <tr>
+        <td>            
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://lichess.org/practice/checkmates/piece-checkmates-i/BJy6fEDf/dW7KIuoY" target="_blank">Basic Piece Mates</a>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://lichess.org/practice/checkmates/checkmate-patterns-i/fE4k21MW/9rd7XwOw" target="_blank">Basic Mate Patterns</a>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>            
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://lichess.org/training/mateIn1" target="_blank">Mate in 1</a>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" name="colorCheckbox" value="Pin">
+                <a href="https://lichess.org/training/mateIn2" target="_blank">Mate in 2</a>
+            </label>
+        </td>
+    </tr>
+</table>
 
 <hr>
 
